@@ -55,7 +55,7 @@ st.markdown(f"""
 
 /* Base */
 .stApp, [data-testid="stAppViewContainer"] {{ background:{BG}; color:{INK}; font-family:{FONT}; }}
-.stApp p, .stApp li, .stApp label, .stApp span, .stApp td, .stApp th, [data-testid="stMarkdownContainer"] {{
+.stApp p, .stApp li, .stApp label, .stApp td, .stApp th, [data-testid="stMarkdownContainer"] {{
     font-family:{FONT} !important; }}
 .stApp p, .stApp li {{ color:{INK}; }}
 .block-container {{ max-width:1240px; padding-top:1.8rem; padding-bottom:3rem; }}
@@ -63,7 +63,7 @@ header[data-testid="stHeader"] {{ background:transparent; }}
 [data-testid="stDecoration"] {{ display:none; }}
 * {{ box-shadow:none !important; text-shadow:none !important; }}
 [data-testid="stCaptionContainer"], [data-testid="stCaptionContainer"] p {{ color:{MUTED} !important; font-size:.8rem; }}
-[data-testid="stIconMaterial"] {{ font-family:'Material Symbols Rounded' !important; }}
+[data-testid="stIconMaterial"], .stApp span[data-testid="stIconMaterial"] {{ font-family:'Material Symbols Rounded' !important; }}
 
 /* Sidebar */
 [data-testid="stSidebar"] {{ background:{DARK}; }}
@@ -153,8 +153,8 @@ header[data-testid="stHeader"] {{ background:transparent; }}
 [data-testid="stTable"] table, .stTable table {{ background:{CARD}; color:{INK}; border-collapse:collapse; width:100%;
     font-size:.86rem; border:none; font-variant-numeric:tabular-nums; }}
 [data-testid="stTable"] thead th, .stTable thead th {{ background:{CARD}; color:{MUTED}; font-weight:600; font-size:.76rem;
-    border:none; border-bottom:1px solid {LINE}; text-align:left; }}
-[data-testid="stTable"] td, .stTable td {{ border:none; border-bottom:1px solid {LINE}; color:{INK}; }}
+    border:none; border-bottom:1px solid {LINE}; text-align:left !important; }}
+[data-testid="stTable"] td, .stTable td {{ border:none; border-bottom:1px solid {LINE}; color:{INK}; text-align:left !important; }}
 [data-testid="stTable"] tbody th, .stTable tbody th {{ background:{CARD}; color:{INK}; font-weight:600;
     border:none; border-bottom:1px solid {LINE}; }}
 [data-testid="stTable"] tr:last-child td, [data-testid="stTable"] tr:last-child th {{ border-bottom:none; }}
