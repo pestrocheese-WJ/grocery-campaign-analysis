@@ -401,7 +401,7 @@ else:
     ])
 
     with card("redeem", "Redemption rate by campaign", "Q4"):
-        note("Share of targeted households that redeemed at least one coupon, ordered by start date. "
+        note("Share of targeted households that redeemed at least one coupon, grouped by campaign type. "
              "Campaign 24 started before the data begins, so its 0% is a data gap.")
         fig = px.bar(camp, x="campaign_id", y="redemption_rate", color="campaign_type",
                      color_discrete_map=CAMPAIGN_COLORS,
